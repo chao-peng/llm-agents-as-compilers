@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-agents-as-compilers"
+version = "0.1.0"
+description = "Reproducible experiments comparing native compilers, direct LLM compilation, and compiler synthesis"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+lac = "lac.cli:main"
+
+[tool.setuptools]
+packages = ["lac"]
+
+[tool.setuptools.package-data]
+lac = ["*.c"]

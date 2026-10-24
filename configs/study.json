@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "cc": "clang",
+  "cflags": [
+    "-O3"
+  ],
+  "execution": "sandbox",
+  "timeout_seconds": 10,
+  "model_timeout_seconds": 120,
+  "rounds": 2,
+  "repeats": 7,
+  "iterations": 2000,
+  "random_cases": 16,
+  "sizes": [
+    64,
+    1024
+  ],
+  "budget": {
+    "max_calls": 24,
+    "max_tokens": 200000,
+    "max_seconds": 3600
+  },
+  "provider": {
+    "kind": "chat",
+    "base_url": "https://api.openai.com/v1",
+    "api_key_env": "OPENAI_API_KEY",
+    "model": "SET_MODEL_ID",
+    "max_completion_tokens": 8192,
+    "parameters": {}
+  }
+}

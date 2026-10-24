@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "name": "pilot",
+  "purpose": "native pilot; not an upstream benchmark score",
+  "tasks": [
+    {
+      "id": "sum_u64",
+      "source": "sum_u64.c",
+      "sha256": "cf7ba3d63b1cab1e6814b9fd6805d53d9835413d3854826a215e76ac3af27589",
+      "split": "dev",
+      "family": "reduction",
+      "category": "loop",
+      "provenance": {
+        "origin": "original project fixture",
+        "version": "1",
+        "adaptation": "uniform uint64_t kernel ABI; runtime inputs",
+        "license": "repository terms"
+      }
+    },
+    {
+      "id": "xor_u64",
+      "source": "xor_u64.c",
+      "sha256": "c8d20f8b92e1a46c05edc48cde3674c3ab6e3391b15cfb08fb283df70cb52d19",
+      "split": "dev",
+      "family": "reduction",
+      "category": "loop",
+      "provenance": {
+        "origin": "original project fixture",
+        "version": "1",
+        "adaptation": "uniform uint64_t kernel ABI; runtime inputs",
+        "license": "repository terms"
+      }
+    },
+    {
+      "id": "count_gt",
+      "source": "count_gt.c",
+      "sha256": "233a1912669b5869700f03612a13f076c2e78c4a9a1ede19ad2b65ac9b9cce2b",
+      "split": "test",
+      "family": "predicate",
+      "category": "branch",
+      "provenance": {
+        "origin": "original project fixture",
+        "version": "1",
+        "adaptation": "uniform uint64_t kernel ABI; runtime inputs",
+        "license": "repository terms"
+      }
+    },
+    {
+      "id": "max_u64",
+      "source": "max_u64.c",
+      "sha256": "4416f73751b7cfb8c44b5d410df7f769f4fd0bdda86dcf5302be663cd692941c",
+      "split": "test",
+      "family": "extrema",
+      "category": "branch",
+      "provenance": {
+        "origin": "original project fixture",
+        "version": "1",
+        "adaptation": "uniform uint64_t kernel ABI; runtime inputs",
+        "license": "repository terms"
+      }
+    },
+    {
+      "id": "dot_adjacent",
+      "source": "dot_adjacent.c",
+      "sha256": "598003d5f6883f4c0b0debdcee98872a842dde024207a10c89b79843a6a61c69",
+      "split": "dev",
+      "family": "pairwise",
+      "category": "loop",
+      "provenance": {
+        "origin": "original project fixture",
+        "version": "1",
+        "adaptation": "uniform uint64_t kernel ABI; runtime inputs",
+        "license": "repository terms"
+      }
+    },
+    {
+      "id": "hash_fnv",
+      "source": "hash_fnv.c",
+      "sha256": "02cd23578f0371bfdf0a49b890f830c7802dec17f711e0200e19e16599236842",
+      "split": "dev",
+      "family": "hash",
+      "category": "application",
+      "provenance": {
+        "origin": "original project fixture",
+        "version": "1",
+        "adaptation": "uniform uint64_t kernel ABI; runtime inputs",
+        "license": "repository terms"
+      }
+    },
+    {
+      "id": "gcd",
+      "source": "gcd.c",
+      "sha256": "01aa4ead077c3b712291b582dc7befc72a4fab508df9373e7495b919027d9f30",
+      "split": "test",
+      "family": "euclid",
+      "category": "scalar",
+      "provenance": {
+        "origin": "original project fixture",
+        "version": "1",
+        "adaptation": "uniform uint64_t kernel ABI; runtime inputs",
+        "license": "repository terms"
+      }
+    },
+    {
+      "id": "popcount",
+      "source": "popcount.c",
+      "sha256": "fcbbd4ab87380fb35e1017f7124f52da1efbe4d6778d3202ec1d459d0aac43c2",
+      "split": "dev",
+      "family": "bit_count",
+      "category": "scalar",
+      "provenance": {
+        "origin": "original project fixture",
+        "version": "1",
+        "adaptation": "uniform uint64_t kernel ABI; runtime inputs",
+        "license": "repository terms"
+      }
+    },
+    {
+      "id": "sort_checksum",
+      "source": "sort_checksum.c",
+      "sha256": "6dda62b0b1b8938d5f48cefad11c3566c77da8ee84b4058071c9ea0c6c5111ef",
+      "split": "test",
+      "family": "sorting",
+      "category": "application",
+      "provenance": {
+        "origin": "original project fixture",
+        "version": "1",
+        "adaptation": "uniform uint64_t kernel ABI; runtime inputs",
+        "license": "repository terms"
+      }
+    },
+    {
+      "id": "copy_checksum",
+      "source": "copy_checksum.c",
+      "sha256": "ace5b84b006d236660d1cba4ef38ec433f70ed96fee869a286e2cdbab342c46a",
+      "split": "dev",
+      "family": "library_copy",
+      "category": "library_application",
+      "provenance": {
+        "origin": "original project fixture",
+        "version": "1",
+        "adaptation": "uniform uint64_t kernel ABI; runtime inputs",
+        "license": "repository terms"
+      }
+    },
+    {
+      "id": "fill_checksum",
+      "source": "fill_checksum.c",
+      "sha256": "81726bb0b0d27105e2f0ee4c2f68351fa646f75e5e52042292541042b658c7e0",
+      "split": "test",
+      "family": "library_fill",
+      "category": "library_application",
+      "provenance": {
+        "origin": "original project fixture",
+        "version": "1",
+        "adaptation": "uniform uint64_t kernel ABI; runtime inputs",
+        "license": "repository terms"
+      }
+    },
+    {
+      "id": "compare_halves",
+      "source": "compare_halves.c",
+      "sha256": "ee1ba4071b1a9c0631d3dd432804e0583d0de51ceb9da3efd4e1924341cb8e70",
+      "split": "test",
+      "family": "library_compare",
+      "category": "library_application",
+      "provenance": {
+        "origin": "original project fixture",
+        "version": "1",
+        "adaptation": "uniform uint64_t kernel ABI; runtime inputs",
+        "license": "repository terms"
+      }
+    }
+  ]
+}

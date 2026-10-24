@@ -1,0 +1,26 @@
+name: tests
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate and test
+        run: |
+          python -m lac validate --suite benchmarks/pilot/suite.json
+          python -m unittest discover -s tests -v
+      - name: Offline A/B/C smoke test
+        run: python -m lac demo --output runs/ci-smoke
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: smoke-${{ matrix.os }}
+          path: runs/ci-smoke

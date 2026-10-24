@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "name": "smoke",
+  "purpose": "infrastructure smoke test",
+  "tasks": [
+    {
+      "id": "affine",
+      "source": "affine.c",
+      "sha256": "e92f7b6f186db9e5d39440c84d050eaa7de4427fe21c63cdb24ede3cedc2ddce",
+      "split": "dev",
+      "family": "arithmetic",
+      "category": "scalar",
+      "provenance": {
+        "origin": "original project fixture",
+        "version": "1",
+        "adaptation": "uniform uint64_t kernel ABI; runtime inputs",
+        "license": "repository terms"
+      }
+    },
+    {
+      "id": "product",
+      "source": "product.c",
+      "sha256": "8a066705e9b94881e70b627e101eab34b4eb7704b60e1aca83a429d33a9651de",
+      "split": "dev",
+      "family": "arithmetic",
+      "category": "scalar",
+      "provenance": {
+        "origin": "original project fixture",
+        "version": "1",
+        "adaptation": "uniform uint64_t kernel ABI; runtime inputs",
+        "license": "repository terms"
+      }
+    },
+    {
+      "id": "xor_mix",
+      "source": "xor_mix.c",
+      "sha256": "99c5969f80d3a56d162b131a4bf808acc0c4f7124c5e76519ee3e6d18b9f52d1",
+      "split": "test",
+      "family": "bitwise",
+      "category": "scalar",
+      "provenance": {
+        "origin": "original project fixture",
+        "version": "1",
+        "adaptation": "uniform uint64_t kernel ABI; runtime inputs",
+        "license": "repository terms"
+      }
+    },
+    {
+      "id": "shift_mix",
+      "source": "shift_mix.c",
+      "sha256": "7ec49db087f8765281297d3a536699f65ce47f471577043b27f858e96715bbfa",
+      "split": "test",
+      "family": "shift",
+      "category": "scalar",
+      "provenance": {
+        "origin": "original project fixture",
+        "version": "1",
+        "adaptation": "uniform uint64_t kernel ABI; runtime inputs",
+        "license": "repository terms"
+      }
+    }
+  ]
+}
